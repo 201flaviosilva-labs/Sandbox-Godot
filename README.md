@@ -1,12 +1,12 @@
-# Unity Repository Template
+# Godot Repository Template
 
 ## Description
 
-A simple costume repository template for a Unity project
+A simple costume repository template for a Godot project
 
 ## Links
 
-- [Play](https://master.d3qmg4fk063k5p.amplifyapp.com/);
-- [Code](https://bitbucket.org/201flaviosilva/unity-repository-template/);
-- [Unity Official Web Site](https://unity.com/);
+- [Play](https://master.dic2bbjrb31lb.amplifyapp.com/);
+- [Code](https://bitbucket.org/201flaviosilva/workspace/projects/GODOT);
+- [Unity Official Web Site](https://godotengine.org/);
 - [Tutorial]();
