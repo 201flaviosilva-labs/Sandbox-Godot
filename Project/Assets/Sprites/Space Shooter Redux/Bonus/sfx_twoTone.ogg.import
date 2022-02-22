@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sfx_twoTone.ogg-02c1f79428151b42bcb846b65ed99cb1.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sprites/Space Shooter Redux/Bonus/sfx_twoTone.ogg"
+dest_files=[ "res://.import/sfx_twoTone.ogg-02c1f79428151b42bcb846b65ed99cb1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
