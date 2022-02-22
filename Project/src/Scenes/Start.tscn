@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/Scenes/Start.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PressStart2P/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://src/Prefabs/ProjectButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Prefabs/ProjectButton/ProjectButton.tscn" type="PackedScene" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -77,5 +77,12 @@ margin_right = 1280.0
 margin_bottom = 38.0
 text = "Raio-X"
 
+[node name="TopDownShootBtn" parent="Buttons" instance=ExtResource( 3 )]
+margin_top = 42.0
+margin_right = 638.0
+margin_bottom = 80.0
+text = "Top Down Shoot"
+
 [connection signal="pressed" from="Buttons/ChangeSceneBtn" to="." method="_on_ChangeSceneBtn_pressed"]
 [connection signal="pressed" from="Buttons/RaioXBtn" to="." method="_on_RaioXBtn_pressed"]
+[connection signal="pressed" from="Buttons/TopDownShootBtn" to="." method="_on_TopDownShootBtn_pressed"]
