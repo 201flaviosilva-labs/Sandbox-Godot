@@ -16,3 +16,9 @@ func _on_RaioXBtn_pressed():
 func _on_TopDownShootBtn_pressed():
 	get_tree().change_scene("res://src/Projects/TopDownShooter/TopDownShooter.tscn");
 	pass # Replace with function body.
+
+
+func _on_ChangeTextureBtn_pressed():
+	get_tree().change_scene("res://src/Projects/ChangeTexture/ChangeTexture.tscn");
+	pass # Replace with function body.
+

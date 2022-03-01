@@ -21,10 +21,6 @@ margin_bottom = 48.0
 text = "Top Down Shooter"
 
 [node name="BackToHomeBtn" parent="." instance=ExtResource( 4 )]
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
 margin_left = 1076.0
 margin_top = 682.0
 margin_right = 1280.0

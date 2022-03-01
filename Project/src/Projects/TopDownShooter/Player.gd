@@ -50,6 +50,6 @@ func shoot():
 	
 	var gun_pos = gun.global_position;
 	var direction = ($BulletDirection.global_position - gun_pos).normalized();
-	
+	print(direction)
 	emit_signal("player_fired", bullet_instance, gun_pos, direction);
 	pass
