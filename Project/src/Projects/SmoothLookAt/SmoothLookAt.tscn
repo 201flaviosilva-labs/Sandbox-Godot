@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/Prefabs/ProjectTitle/ProjectTitle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Prefabs/BackToHomeBtn/BackToHomeBtn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Sprites/Space Shooter Redux/PNG/Ships/playerShip1_blue.png" type="Texture" id=3]
+[ext_resource path="res://src/Projects/SmoothLookAt/Look_At.gd" type="Script" id=4]
+[ext_resource path="res://src/Projects/SmoothLookAt/ConstantSmooth.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Sprites/Space Shooter Redux/PNG/Ships/playerShip1_orange.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Space Shooter Redux/PNG/Ships/playerShip3_green.png" type="Texture" id=7]
+[ext_resource path="res://src/Projects/SmoothLookAt/BasicSmooth.gd" type="Script" id=8]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackToHomeBtn" parent="." instance=ExtResource( 2 )]
+margin_left = 1072.0
+margin_top = 683.0
+margin_right = 1276.0
+margin_bottom = 721.0
+
+[node name="ProjectTitle" parent="." instance=ExtResource( 1 )]
+margin_right = 1282.0
+margin_bottom = 49.0
+text = "Smooth Look At"
+
+[node name="Look_At" type="Node2D" parent="."]
+position = Vector2( 264, 358 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Look_At"]
+rotation = 1.5708
+texture = ExtResource( 3 )
+
+[node name="BasicSmooth" type="Node2D" parent="."]
+position = Vector2( 1008, 365 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="BasicSmooth"]
+rotation = -1.5708
+texture = ExtResource( 6 )
+
+[node name="ConstantSmooth" type="Node2D" parent="."]
+position = Vector2( 622, 357 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="ConstantSmooth"]
+rotation = -1.5708
+texture = ExtResource( 7 )

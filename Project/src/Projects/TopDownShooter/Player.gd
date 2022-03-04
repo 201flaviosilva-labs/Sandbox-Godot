@@ -6,7 +6,7 @@ signal player_fired(bullet, position, direction);
 export (int) var SPEED = 400;
 export (PackedScene) var bullet;
 
-onready var gun = $Gun;
+onready var gun = $Sprite/Gun;
 
 var next_shoot_time = 10;
 var current_shoot_time = 0;
@@ -49,7 +49,7 @@ func shoot():
 	var bullet_instance = bullet.instance();
 	
 	var gun_pos = gun.global_position;
-	var direction = ($BulletDirection.global_position - gun_pos).normalized();
+	var direction = ($Sprite/BulletDirection.global_position - gun_pos).normalized();
 	print(direction)
 	emit_signal("player_fired", bullet_instance, gun_pos, direction);
 	pass
