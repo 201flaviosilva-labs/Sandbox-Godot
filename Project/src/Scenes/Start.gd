@@ -25,3 +25,7 @@ func _on_ChangeTextureBtn_pressed():
 func _on_SmoothLookAtBTN_pressed():
 	get_tree().change_scene("res://src/Projects/SmoothLookAt/SmoothLookAt.tscn");
 	pass # Replace with function body.
+
+func _on_DoubleJumpBTN_pressed():
+	get_tree().change_scene("res://src/Projects/DoubleJump/DoubleJump.tscn");
+	pass # Replace with function body.

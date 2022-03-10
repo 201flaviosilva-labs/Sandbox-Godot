@@ -96,8 +96,16 @@ margin_right = 638.0
 margin_bottom = 122.0
 text = "Smooth Look At"
 
+[node name="DoubleJumpBTN" parent="Buttons" instance=ExtResource( 3 )]
+margin_left = 642.0
+margin_top = 84.0
+margin_right = 1280.0
+margin_bottom = 122.0
+text = "Double Jump"
+
 [connection signal="pressed" from="Buttons/ChangeSceneBtn" to="." method="_on_ChangeSceneBtn_pressed"]
 [connection signal="pressed" from="Buttons/RaioXBtn" to="." method="_on_RaioXBtn_pressed"]
 [connection signal="pressed" from="Buttons/TopDownShootBtn" to="." method="_on_TopDownShootBtn_pressed"]
 [connection signal="pressed" from="Buttons/ChangeTextureBtn" to="." method="_on_ChangeTextureBtn_pressed"]
 [connection signal="pressed" from="Buttons/SmoothLookAtBTN" to="." method="_on_SmoothLookAtBTN_pressed"]
+[connection signal="pressed" from="Buttons/DoubleJumpBTN" to="." method="_on_DoubleJumpBTN_pressed"]
