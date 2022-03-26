@@ -1,7 +1,6 @@
-[gd_scene load_steps=89 format=2]
+[gd_scene load_steps=88 format=2]
 
-[ext_resource path="res://src/Prefabs/ProjectTitle/ProjectTitle.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/Prefabs/BackToHomeBtn/BackToHomeBtn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Prefabs/ProjectCanvas/ProjectCanvas.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Sprites/8_directions/idle_back.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Sprites/8_directions/idle_back_right.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Sprites/8_directions/idle_back_left.png" type="Texture" id=5]
@@ -1510,18 +1509,6 @@ graph_offset = Vector2( -1, 124 )
 
 [node name="8Directions" type="Node2D"]
 
-[node name="UI" type="Control" parent="."]
-margin_right = 1280.0
-margin_bottom = 720.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ProjectTitle" parent="UI" instance=ExtResource( 1 )]
-text = "Movimentação 2D em 8 Direções"
-
-[node name="BackToHomeBtn" parent="UI" instance=ExtResource( 2 )]
-
 [node name="Game" type="Node2D" parent="."]
 
 [node name="Player" type="KinematicBody2D" parent="Game"]
@@ -1573,3 +1560,6 @@ parameters/playback = SubResource( 7 )
 parameters/Idle/blend_position = Vector2( -0.621753, 0.158273 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 parameters/Walk/blend_position = Vector2( 0, 0 )
+
+[node name="ProjectCanvas" parent="." instance=ExtResource( 1 )]
+PROJECT_NAME = "8 Directions"
