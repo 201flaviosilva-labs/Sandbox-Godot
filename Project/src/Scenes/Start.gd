@@ -39,3 +39,8 @@ func _on_8DirectionsBTN_pressed():
 func _on_BouceBall2DBTN_pressed():
 	get_tree().change_scene("res://src/Projects/BouceBall2D/BouceBall2D.tscn")
 	pass # Replace with function body.
+
+
+func _on_BodyTypesBTN2_pressed():
+	get_tree().change_scene("res://src/Projects/Body Types/BodyTypes.tscn")
+	pass # Replace with function body.
