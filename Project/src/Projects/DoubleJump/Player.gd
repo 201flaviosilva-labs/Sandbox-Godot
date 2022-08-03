@@ -24,8 +24,6 @@ func _process(delta):
 	var direction = Input.get_axis("left", "right");
 	if direction: motion_velocity.x = direction * SPEED;
 	else: motion_velocity.x = move_toward(motion_velocity.x, 0, SPEED);
-		
-		
 	pass
 	
 func _physics_process(delta):

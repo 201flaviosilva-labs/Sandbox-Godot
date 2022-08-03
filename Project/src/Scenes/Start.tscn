@@ -71,63 +71,48 @@ margin_right = 638.0
 margin_bottom = 38.0
 text = "Change Scene"
 
-[node name="RaioXBtn" parent="Buttons" instance=ExtResource( 3 )]
+[node name="TopDownShootBtn" parent="Buttons" instance=ExtResource( 3 )]
 margin_left = 642.0
 margin_right = 1280.0
 margin_bottom = 38.0
-text = "Raio-X"
-
-[node name="TopDownShootBtn" parent="Buttons" instance=ExtResource( 3 )]
-margin_top = 42.0
-margin_right = 638.0
-margin_bottom = 80.0
 text = "Top Down Shoot"
 
 [node name="ChangeTextureBtn" parent="Buttons" instance=ExtResource( 3 )]
-margin_left = 642.0
 margin_top = 42.0
-margin_right = 1280.0
+margin_right = 638.0
 margin_bottom = 80.0
 text = "Change Texture"
 
 [node name="SmoothLookAtBTN" parent="Buttons" instance=ExtResource( 3 )]
-margin_top = 84.0
-margin_right = 638.0
-margin_bottom = 122.0
+margin_left = 642.0
+margin_top = 42.0
+margin_right = 1280.0
+margin_bottom = 80.0
 text = "Smooth Look At"
 
 [node name="DoubleJumpBTN" parent="Buttons" instance=ExtResource( 3 )]
+margin_top = 84.0
+margin_right = 638.0
+margin_bottom = 122.0
+text = "Double Jump"
+
+[node name="BouceBall2DBTN" parent="Buttons" instance=ExtResource( 3 )]
 margin_left = 642.0
 margin_top = 84.0
 margin_right = 1280.0
 margin_bottom = 122.0
-text = "Double Jump"
-
-[node name="8DirectionsBTN" parent="Buttons" instance=ExtResource( 3 )]
-margin_top = 126.0
-margin_right = 638.0
-margin_bottom = 164.0
-text = "2D 8 Directions"
-
-[node name="BouceBall2DBTN" parent="Buttons" instance=ExtResource( 3 )]
-margin_left = 642.0
-margin_top = 126.0
-margin_right = 1280.0
-margin_bottom = 164.0
 text = "Bouce Ball 2D"
 
-[node name="BodyTypesBTN2" parent="Buttons" instance=ExtResource( 3 )]
-margin_top = 168.0
+[node name="BodyTypesBTN" parent="Buttons" instance=ExtResource( 3 )]
+margin_top = 126.0
 margin_right = 638.0
-margin_bottom = 206.0
+margin_bottom = 164.0
 text = "Body Types"
 
 [connection signal="pressed" from="Buttons/ChangeSceneBtn" to="." method="_on_ChangeSceneBtn_pressed"]
-[connection signal="pressed" from="Buttons/RaioXBtn" to="." method="_on_RaioXBtn_pressed"]
 [connection signal="pressed" from="Buttons/TopDownShootBtn" to="." method="_on_TopDownShootBtn_pressed"]
 [connection signal="pressed" from="Buttons/ChangeTextureBtn" to="." method="_on_ChangeTextureBtn_pressed"]
 [connection signal="pressed" from="Buttons/SmoothLookAtBTN" to="." method="_on_SmoothLookAtBTN_pressed"]
 [connection signal="pressed" from="Buttons/DoubleJumpBTN" to="." method="_on_DoubleJumpBTN_pressed"]
-[connection signal="pressed" from="Buttons/8DirectionsBTN" to="." method="_on_8DirectionsBTN_pressed"]
 [connection signal="pressed" from="Buttons/BouceBall2DBTN" to="." method="_on_BouceBall2DBTN_pressed"]
-[connection signal="pressed" from="Buttons/BodyTypesBTN2" to="." method="_on_BodyTypesBTN2_pressed"]
+[connection signal="pressed" from="Buttons/BodyTypesBTN" to="." method="_on_BodyTypesBTN_pressed"]
