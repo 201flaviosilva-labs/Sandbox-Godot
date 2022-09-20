@@ -1,12 +1,11 @@
-# Godot Repository Template
+# Godot Sandbox
 
 ## Description
 
-A simple costume repository template for a Godot project
+Just some tests in godot :)
 
 ## Links
 
-- [Play](https://master.dic2bbjrb31lb.amplifyapp.com/);
-- [Code](https://bitbucket.org/201flaviosilva/workspace/projects/GODOT);
-- [Unity Official Web Site](https://godotengine.org/);
-- [Tutorial]();
+- [Play](https://201flaviosilva-labs.github.io/Sandbox-Godot/;
+- [Code](https://github.com/201flaviosilva-labs/Sandbox-Godot;
+- [Godot Official Web Site](https://godotengine.org/);
