@@ -40,3 +40,8 @@ func _on_BouceBall2DBTN_pressed():
 func _on_BodyTypesBTN_pressed():
 	get_tree().change_scene("res://src/Projects/Body Types/BodyTypes.tscn")
 	pass # Replace with function body.
+
+
+func _on_velocityFromRotation_pressed() -> void:
+	get_tree().change_scene("res://src/Projects/VelocityFromRotation/VelocityFromRotation.tscn")
+	pass # Replace with function body.

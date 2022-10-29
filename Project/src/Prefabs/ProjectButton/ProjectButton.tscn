@@ -12,6 +12,4 @@ margin_bottom = 26.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
 text = "Project"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+clip_text = true

@@ -15,7 +15,8 @@ func _ready():
 	pass
 
 func _process(delta):
-	look_at(get_global_mouse_position());
+	look_at(get_global_mouse_position())
+	print(rotation_degrees)
 	var velocity = Vector2.ZERO;
 	
 	if Input.is_action_pressed("up"):
@@ -32,14 +33,11 @@ func _process(delta):
 	position += velocity * delta;
 	
 	current_shoot_time += 1;
-	if Input.is_action_pressed("shoot"):
-		shoot();
+	if Input.is_action_pressed("shoot"): shoot()
 	pass
 
 func _unhandled_input(event):
-	if event.is_action_pressed("shoot"):
-		shoot();
-		pass
+	if event.is_action_pressed("shoot"): shoot()
 	pass
 	
 func shoot():
