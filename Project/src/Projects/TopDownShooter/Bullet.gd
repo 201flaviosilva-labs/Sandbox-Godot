@@ -17,5 +17,4 @@ func _physics_process(delta):
 	
 	var velocity = direction * SPEED;
 	global_position += velocity * delta;
-	
 	pass

@@ -26,16 +26,19 @@ bullet = ExtResource( 6 )
 rotation = 1.5708
 texture = ExtResource( 2 )
 
-[node name="Gun" type="Position2D" parent="Player/Sprite"]
-position = Vector2( -0.00012207, -35 )
-rotation = -1.5708
-
-[node name="BulletDirection" type="Position2D" parent="Player/Sprite"]
-position = Vector2( -0.000152588, -40 )
-rotation = -1.5708
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource( 1 )
 
+[node name="GunPosition" type="Position2D" parent="Player"]
+position = Vector2( 35, 0 )
+
+[node name="BulletDirection" type="Position2D" parent="Player"]
+position = Vector2( 40, 0 )
+
+[node name="ShootTimer" type="Timer" parent="Player"]
+one_shot = true
+
 [node name="ProjectCanvas" parent="." instance=ExtResource( 4 )]
 PROJECT_NAME = "Top Down Shooter"
+
+[connection signal="timeout" from="Player/ShootTimer" to="Player" method="_on_ShootTimer_timeout"]

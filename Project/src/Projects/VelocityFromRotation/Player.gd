@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (int) var MAX_SPEED: int = 50
+export (int) var MAX_SPEED: int = 250
 export (int) var ROTATION_SPEED: int = 200
 
 var currentSpeed: int = 0
@@ -18,9 +18,9 @@ func _process(delta: float) -> void:
 	else: currentRotationSpeed = 0
 	
 	# Move
+	currentSpeed = 0
 	if Input.is_action_pressed("up"): currentSpeed += MAX_SPEED
-	elif Input.is_action_pressed("down"): currentSpeed -= MAX_SPEED
-	else: currentSpeed = 0
+	if Input.is_action_pressed("down"): currentSpeed -= MAX_SPEED
 	pass
 
 func _physics_process(delta: float) -> void:
@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	rotation_degrees += currentRotationSpeed * delta
 	
 	# Move
-	# Ref: https://godotengine.org/qa/25996/how-to-do-movement-based-on-rotation
+#	# Ref: https://godotengine.org/qa/25996/how-to-do-movement-based-on-rotation
 	velocity = Vector2(1, 0).rotated(rotation) * currentSpeed
 	velocity = move_and_slide(velocity)
 	pass

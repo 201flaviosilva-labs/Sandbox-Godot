@@ -4,12 +4,18 @@ export (int) var SPEED = 400;
 export (int) var GRAVITY = 300
 
 onready var player = $KinematicBody2D
+onready var kinematic2:KinematicBody2D = $KinematicBody2D2
+
+var kinematic2Velocity : Vector2 = Vector2.ZERO
 
 func _ready():
 	pass
 
 func _physics_process(delta):
-	_move(delta);
+	_move(delta)
+	kinematic2Velocity.y += GRAVITY
+	
+	kinematic2Velocity = kinematic2.move_and_slide(kinematic2Velocity, Vector2.UP)
 
 func _move(delta):
 	var velocity = Vector2.ZERO;
