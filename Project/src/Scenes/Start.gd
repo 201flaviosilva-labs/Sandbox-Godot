@@ -45,3 +45,8 @@ func _on_BodyTypesBTN_pressed():
 func _on_velocityFromRotation_pressed() -> void:
 	get_tree().change_scene("res://src/Projects/VelocityFromRotation/VelocityFromRotation.tscn")
 	pass # Replace with function body.
+
+
+func _on_AreaCollision_pressed() -> void:
+	get_tree().change_scene("res://src/Projects/AreaCollision/AreaCollision.tscn")
+	pass # Replace with function body.

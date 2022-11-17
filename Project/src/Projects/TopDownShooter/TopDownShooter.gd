@@ -13,3 +13,8 @@ func _player_fired(new_bullet, start_position, direction):
 	new_bullet.global_position = start_position;
 	new_bullet.set_direction(direction);
 	pass
+
+
+func _on_Timer_timeout() -> void:
+	print("beep")
+	pass # Replace with function body.

@@ -1,4 +1,3 @@
-# https://www.youtube.com/watch?v=ggt05fCiH7M
 extends Area2D
 
 signal player_fired(bullet, position, direction);
