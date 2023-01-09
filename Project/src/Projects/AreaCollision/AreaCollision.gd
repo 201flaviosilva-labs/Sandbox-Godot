@@ -60,7 +60,6 @@ func _choice(arr):
 # ------------ Events ----------
 func _on_Player_area_entered(area: Area2D) -> void:
 	score += 1
-	print(score)
 	area.queue_free()
 	pass
 
