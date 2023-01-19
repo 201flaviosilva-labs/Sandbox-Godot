@@ -94,6 +94,10 @@ run={
  ]
 }
 
+[mono]
+
+project/assembly_name="SandBox"
+
 [physics]
 
 common/enable_pause_aware_picking=true
